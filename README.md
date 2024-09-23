@@ -18,7 +18,7 @@ The **AD-Cybersecurity-Simulation-Lab** is a virtual cybersecurity lab that allo
   - **Kali Linux**: `192.168.10.250` (Red team attack machine)
 
 ### Network Diagram
-![Network Diagram](./assets/images/network-diagram.png)
+![Network Diagram](./assets/images/network-diagram.jpg)
 
 ## 🛠️ Tools and Technologies
 - **Splunk**: Central log management.
@@ -35,7 +35,7 @@ For more details, visit the [tools-used](./assets/docs/tools-used.md) file.
 - **Target**: Windows 10 Client
 - **Outcome**: Successful brute force attack with user credentials for `Susan Smith`.
 
-![Brute Force Log](./assets/images/crowbar-attack.png)
+![Brute Force Log](./assets/images/kali_crowbar.png)
 
 For more details, see [brute-force-attack.md](./assets/docs/brute-force-attack.md).
 
@@ -43,7 +43,7 @@ For more details, see [brute-force-attack.md](./assets/docs/brute-force-attack.m
 - **Splunk** captured multiple failed login attempts (Event ID 4625) and a successful login (Event ID 4624).
 - The blue team investigated and identified the brute force attack through Splunk logs.
 
-![Splunk Log Analysis](./assets/images/splunk-log-analysis.png)
+![Splunk Log Analysis](./assets/images/splunk_bruteforce.png)
 
 For further information on attacks and defenses, see the [attack-description](./assets/docs/attack-description.md) file.
 
@@ -82,14 +82,9 @@ AD-Cybersecurity-Simulation-Lab/
 ├── LICENSE                        # Project license
 ├── assets/
 │   ├── images/                    # Images and screenshots
-│   │   └── network-diagram.png    # Network diagram
-│   │   └── splunk-log-analysis.png# Splunk log analysis screenshot
 │   └── docs/                      # Documentation files
 │       └── tools-used.md          # List of tools used
 │       └── setup-guide.md         # Lab setup guide
 │       └── attack-description.md  # Description of red/blue team activities
 │       └── ad-setup-guide.md      # AD Domain Controller setup guide
 │       └── brute-force-attack.md  # Detailed brute force attack description
-└── configurations/
-    └── sysmon-config.xml          # Sysmon configuration file
-    └── splunk-forwarder.conf      # Splunk Universal Forwarder configuration
