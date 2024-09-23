@@ -55,7 +55,8 @@ I built a simulated small enterprise network environment, where I triggered vari
 2. **Methodology**:
    - I used **Crowbar** on Kali Linux to launch a brute force attack on the Windows 10 machine.
    - I selected 20 passwords from a pre-existing list, including the password for user "Susan Smith" (`wH0ish1r!nG`), to carry out the attack.
-     ![Passwords Screenshot](./assets/images/passwords.png) <!-- Image placeholder -->
+     
+     ![Passwords Screenshot](./assets/images/passwords.png)
   
 3. **Outcome**: The attack was successful after 20 attempts, and I was able to log in with Susan Smith's credentials, confirming that the brute force worked. This scenario mimics a common internal network attack, where an attacker gains unauthorized access by brute-forcing weak or known credentials. 
 
@@ -103,6 +104,7 @@ I built a simulated small enterprise network environment, where I triggered vari
 
 6. **Blue Team Response**:
    - I used Splunk to search for **Event ID 4720**, which tracks new user account creation. This allowed me to quickly detect when the new admin user was created.
+     
      ![Splunk search newlocaluser](./assets/images/splunk_search_newlocaluser.png)
    - By setting up filters and alerts for account creation and modification events, I was able to catch this privilege escalation technique in real-time.
      
