@@ -26,7 +26,7 @@ The **AD-Cybersecurity-Simulation-Lab** is a virtual cybersecurity lab that allo
 - **Atomic Red Team**: Simulating adversary techniques.
 - **Kali Linux**: Offensive security and penetration testing.
 
-For more details, visit the [tools-used](./assets/docs/tools-used.md) file.
+For more details, visit the [tools-used](./tools-used.md) file.
 
 ## ⚔️ Attack Simulations
 
@@ -37,7 +37,7 @@ For more details, visit the [tools-used](./assets/docs/tools-used.md) file.
 
 ![Brute Force Log](./assets/images/kali_crowbar.png)
 
-For more details, see [brute-force-attack.md](./assets/docs/brute-force-attack.md).
+For more details, see [brute-force-attack.md](./brute-force-attack.md).
 
 ### 2. Blue Team Defense: Log Monitoring in Splunk
 - **Splunk** captured multiple failed login attempts (Event ID 4625) and a successful login (Event ID 4624).
@@ -45,7 +45,7 @@ For more details, see [brute-force-attack.md](./assets/docs/brute-force-attack.m
 
 ![Splunk Log Analysis](./assets/images/splunk_bruteforce.png)
 
-For further information on attacks and defenses, see the [attack-description](./assets/docs/attack-description.md) file.
+For further information on attacks and defenses, see the [attack-description](./attack-description.md) file.
 
 ## 🚀 Lab Setup
 
@@ -60,7 +60,7 @@ For further information on attacks and defenses, see the [attack-description](./
 1. **Set Up Active Directory Domain Controller**:
    - Install **Windows Server 2022**.
    - Configure **Active Directory Domain Services (AD DS)**.
-   - Follow the guide in [ad-setup-guide.md](./assets/docs/ad-setup-guide.md).
+   - Follow the guide in [ad-setup-guide.md](./ad-setup-guide.md).
    
 2. **Install Splunk Forwarders**:
    - Set up the **Splunk Universal Forwarder** on both the AD server and the Windows 10 client.
@@ -71,7 +71,7 @@ For further information on attacks and defenses, see the [attack-description](./
 4. **Run Atomic Red Team Attacks**:
    - Use **Atomic Red Team** to simulate various attack techniques like privilege escalation and account creation.
 
-For a complete setup guide, visit the [setup-guide.md](./assets/docs/setup-guide.md) file.
+For a complete setup guide, visit the [setup-guide.md](./setup-guide.md) file.
 
 ## 🗂️ Project Structure
 
