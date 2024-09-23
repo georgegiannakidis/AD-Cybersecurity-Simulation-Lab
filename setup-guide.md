@@ -41,7 +41,7 @@ I installed **Sysmon** on the Windows 10 client to monitor detailed system activ
 
 ## 🔧 Step 3: Set Up the Splunk Server
 ### 3.1 Installing Splunk
-On another virtual machine, I installed Splunk and configured it with the IP address 192.168.10.10. I accessed the web interface and set up my index for storing logs (endpoint), which I used to monitor logs coming from Windows clients.
+On another virtual machine, I installed Splunk and configured it with the IP address 192.168.10.10. I accessed the web interface and set up my index for storing logs (endpoint), which I used to monitor logs coming from Windows clients. ![Splunk IP](./assets/images/splunk_ip.png)
 
 ## 🚀 Step 4: Install Splunk Universal Forwarder on Windows Machines
 ### 4.1 Installing Splunk Forwarder
