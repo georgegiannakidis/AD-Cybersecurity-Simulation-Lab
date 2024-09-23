@@ -18,7 +18,7 @@ The **AD-Cybersecurity-Simulation-Lab** is a virtual cybersecurity lab that allo
   - **Kali Linux**: `192.168.10.250` (Red team attack machine)
 
 ### Network Diagram
-![Network Diagram](./assets/images/network-diagram.jpg)
+![Network Diagram](./assets/images/network_diagram.jpg)
 
 ## 🛠️ Tools and Technologies
 - **Splunk**: Central log management.
