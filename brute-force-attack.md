@@ -22,5 +22,7 @@ crowbar -b rdp -s 192.168.10.10 -u susan.smith -C /path/to/password_list.txt
 ### 2.2 Successful Login
 After trying several passwords, I successfully cracked the password for Susan Smith (wH0ish1r!nG) and gained access to the Windows 10 machine via RDP.
 
+![Crowbar attack](./assets/images/kali_crowbar.png)
+
 ## 🎯 Conclusion
 This attack showed how brute force techniques can be used to gain unauthorized access. I used Splunk to monitor and log all failed and successful attempts, which provided valuable insight for blue team activities.
