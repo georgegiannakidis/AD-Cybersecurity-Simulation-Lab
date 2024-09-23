@@ -87,19 +87,28 @@ I built a simulated small enterprise network environment, where I triggered vari
 
 ### 🛠️ Atomic Red Team Simulation Phase: Exploiting **T1136.001 (Local Account Creation)**
 
-1. **Scenario**: I used **Atomic Red Team** on the Windows 10 machine to simulate adversarial techniques from the MITRE ATT&CK framework, specifically **T1136.001**, which creates local accounts with administrative privileges.
+1. **Scenario**: I installed the **Atomic Red Team** on the Windows 10 machine via Powershell to simulate adversarial techniques from the MITRE ATT&CK framework. The folder names are mapped according to Mitre ATT&CK IDs. https://attack.mitre.org/matrices/enterprise/
+![Atomic Red Team folders](./assets/images/atomic_mitre.png)
+2. For example in our folder we have the names T1136.001, T1136.002 and T1136.003:
+   
+   ![Mitre 1](./assets/images/mitre_1.jpg)
+4. In Mitre ATT&CK IDs these are under the Persistence category techniques and are the Create account attack. 
+  ![Mitre](./assets/images/mitre_attack.jpg)
 
-2. **Execution**:
+5. **Execution**:
    - After configuring Windows Defender to allow Atomic Red Team operations, I used PowerShell to simulate the creation of a new local admin user (`NewLocalUser`).
    - This technique was designed to mimic an adversary gaining persistence in a system by creating new local accounts with admin privileges.
 
    ![Atomic Red Team Setup](./assets/images/newlocaluser.png) <!-- Image placeholder -->
 
-3. **Blue Team Response**:
+6. **Blue Team Response**:
    - I used Splunk to search for **Event ID 4720**, which tracks new user account creation. This allowed me to quickly detect when the new admin user was created.
+     ![Splunk search newlocaluser](./assets/images/splunk_search_newlocaluser.png)
    - By setting up filters and alerts for account creation and modification events, I was able to catch this privilege escalation technique in real-time.
+     
+     ![Splunk newlocaluser info](./assets/images/splunk_newlocaluser_details.png)
 
-4. **Security Recommendation**:
+7. **Security Recommendation**:
    - I recommend configuring alerts in Splunk to automatically trigger when suspicious account creation events are detected. This can help defend against privilege escalation and insider threats.
 
 ### Analytical Insights:
