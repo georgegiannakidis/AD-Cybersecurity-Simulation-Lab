@@ -54,7 +54,7 @@ I used Kali Linux as the attacker machine. After installing it, I assigned it th
 ### 5.2 Using Crowbar for Brute Force Attacks
 I installed Crowbar, a brute force password attack tool. After setting it up, I used it to simulate attacks against the Windows 10 machine.
 
-For more detailed steps on the brute force attack, check the brute-force-attack.md.
+For more detailed steps on the brute force attack, check the ![brute-force-attack.md](./brute-force-attack.md).
 
 ## 🛡️ Step 6: Monitoring with Splunk (Blue Team)
 ### 6.1 Checking Logs in Splunk
